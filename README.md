@@ -69,3 +69,8 @@ Simulação: simular_carga_legado() gera cinco registros de cliente e cinco de p
 
 Execução
 Ao rodar simular_carga_legado(), a função insere novos dados simulados no Data Vault, imitando uma carga de dados vinda de um sistema legado. Essa simulação permite observar como o Data Vault se comporta ao receber dados novos de clientes e pedidos.
+
+Banco de Dados
+
+![alt text](image.png)
+

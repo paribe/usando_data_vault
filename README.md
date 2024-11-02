@@ -335,3 +335,17 @@ Copiar código
 5 registros inseridos no Satélite de Pedidos.
 Isso vai popular as tabelas Hub_Cliente, Hub_Pedido, Link_Cliente_Pedido, Sat_Cliente e Sat_Pedido com dados de exemplo.
 
+# Explicação do Código
+Gerar Dados Fictícios:
+
+gerar_dados_cliente() cria dados de cliente com um ID único e outras informações fictícias.
+gerar_dados_pedido() cria dados de pedido, incluindo um ID, valor e status aleatórios.
+Inserir Dados no Data Vault:
+
+Hubs: Funções inserir_multiplos_hub_cliente e inserir_multiplos_hub_pedido inserem clientes e pedidos no hub correspondente.
+Links: inserir_multiplos_links cria relacionamentos entre cliente e pedido.
+Satélites: inserir_multiplos_sat_cliente e inserir_multiplos_sat_pedido inserem detalhes adicionais de cliente e pedido nos satélites.
+Simulação: simular_carga_legado() gera cinco registros de cliente e cinco de pedido, inserindo-os na estrutura de Data Vault.
+
+Execução
+Ao rodar simular_carga_legado(), a função insere novos dados simulados no Data Vault, imitando uma carga de dados vinda de um sistema legado. Essa simulação permite observar como o Data Vault se comporta ao receber dados novos de clientes e pedidos.
